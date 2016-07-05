@@ -10,7 +10,7 @@ import pyroms
 grd_s = pyroms.grid.get_ROMS_grid('v1d_grd')
 grd_z = pyroms.grid.get_ROMS_grid('v1d_grd_z')
 
-src_nc0 = netCDF4.Dataset('/Users/misumi/work/160701_roms_work/data/fesedflux_gx1v6_etopo2v2_Dec2012.nc','r')
+src_nc0 = netCDF4.Dataset('/Users/misumi/tower/Roms_work/data/fesedflux_gx1v6_etopo2v2_Dec2012.nc','r')
 dst_nc0 = netCDF4.Dataset('/Users/misumi/roms_data/v1d_coag/v1d_fesed_160701.nc','a')
 
 ny, nx, = grd_s.hgrid.mask.shape
